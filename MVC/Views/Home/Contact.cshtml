@@ -2,17 +2,23 @@
 
 <h2>Contact</h2>
 
-@using (Html.BeginForm()) {
+@using (Html.BeginForm("Thanks", "Home", FormMethod.Post)) {
 
-    <div>
-        @Html.LabelFor(x=>x.Name)
-        @Html.TextBoxFor(x=>x.Name)
-        @Html.ValidationMessageFor(x=>x.Name)
-    </div>
+<div>
+    @Html.LabelFor(x => x.Name)
+    @Html.TextBoxFor(x => x.Name)
+    @Html.ValidationMessageFor(x => x.Name)
+</div>
 
     <div>
         @Html.LabelFor(x=>x.Email)
         @Html.TextBoxFor(x=>x.Email)
+        @Html.ValidationMessageFor(x=>x.Email)
+    </div>
+
+    <div>
+        @Html.LabelFor(x=>x.Message)
+        @Html.TextAreaFor(x => x.Message, 5, 30, null)
     </div>
 
     <button type="submit">Send</button>

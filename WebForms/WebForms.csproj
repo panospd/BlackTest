@@ -71,9 +71,12 @@
     <Content Include="ContactUs.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Checks\Check.cs" />
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

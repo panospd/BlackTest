@@ -18,17 +18,19 @@
             <!-- Todo: validate the email address -->
         </div>
         <div>
+            <asp:Label runat="server" AssociatedControlID="Message" Text="Your message:" />
+            <asp:TextBox ID="Message" runat="server" TextMode="MultiLine" Width="400px" Height="100px"></asp:TextBox>
             <!-- Todo: allow them to actually enter a message -->
         </div>
 
         <div>
-            <asp:Button runat="server" Text="Send" />
+            <asp:Button runat="server" ID="ContactUsBtn" Text="Send" OnClick="ContactUsBtnClick" />
             <!-- Todo: send this info back to the server -->
         </div>
     </asp:Panel>
 
     <asp:Panel runat="server" ID="FeedbackPanel" Visible="false">
-        <p>Thanks for contacting us, <asp:Literal runat="server" />, we'll get back to you soon.</p>
+        <p>Thanks for contacting us, <asp:Literal runat="server" ID="extraFeedbackText" />we'll get back to you soon.</p>
         <!-- Todo: show this panel after submission -->
     </asp:Panel>
 

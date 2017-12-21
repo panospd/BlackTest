@@ -1,3 +1,11 @@
 ﻿@model BlackLight.Recruitment.MVC.Models.ThanksViewModel
 
-<p>Thanks for contacting us, Oin son of Groin, we'll get back to you soon.</p>
+@if (Model.Name == "Thorin Oakenshield son of Thrain")
+{
+    <p>Thanks for contacting us, @Model.Name, we'll get back to you soon.</p>
+}
+else
+{
+    <p>Thanks for contacting us, Oin son of Groin, we'll get back to you soon.</p>
+}
+

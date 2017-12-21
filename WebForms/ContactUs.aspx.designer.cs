@@ -49,6 +49,24 @@ namespace BlackLight.Recruitment.WebForms {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regexEmailValid;
         
         /// <summary>
+        /// Message control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Message;
+        
+        /// <summary>
+        /// ContactUsBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ContactUsBtn;
+        
+        /// <summary>
         /// FeedbackPanel control.
         /// </summary>
         /// <remarks>
@@ -56,5 +74,14 @@ namespace BlackLight.Recruitment.WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel FeedbackPanel;
+        
+        /// <summary>
+        /// extraFeedbackText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal extraFeedbackText;
     }
 }
